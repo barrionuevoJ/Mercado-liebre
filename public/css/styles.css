@@ -1,0 +1,120 @@
+body{
+    font-family: 'Roboto';
+    font-size: 12px;
+    margin: 0px;
+    width: 100%;
+}  
+
+header {
+    background-color: #EAC926;
+}
+
+header .top-header {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+header .top-header .logo{
+    width: 200px;
+    padding: 20px 0px;
+}
+
+header .top-header .form .input{
+    background-color: white;
+    border: 1px solid #666;
+    color: #666;
+    padding: 2px;
+    width: 210px;
+}
+
+header .top-header .form .submit{
+    background-color: white;
+    margin-top: 2px;
+    text-align: center;
+    width: 12px;
+    padding: 1px;
+    border: 1px solid #666;
+    cursor: pointer;
+}
+
+header .top-header p{
+    text-align: center;
+}
+
+
+nav ul{
+    padding: inherit;
+}
+
+nav ul li{
+    text-align: start;
+    list-style: none; 
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+header .bot-header{
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+
+header .bot-header .burger-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1259c3;
+    color: white;
+    border-radius: 14%;
+    width: 47px;
+    height: 47px;
+    font-size: x-large;
+}
+
+main .banner img{
+    width: 100%;
+}
+
+main .last-visit img{
+    width: 30%;
+}
+
+main .offers img{
+    width: 30%;
+}
+
+footer section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+footer section h3{
+    margin: 0px;
+    color: #666;
+}
+
+footer section i{
+    font-size: 2em;
+    color: #1259c3;
+    margin-bottom: 10px;
+}
+
+footer section p{
+    margin: 0px;
+}
+
+footer p{
+    color: #666;
+    width: 61%;
+}
+
+footer .copyright {
+    margin-left: 15px;
+    font-size: 11px;
+}
