@@ -33,7 +33,10 @@ header {
     background-color: #EAC926;
 }
 
-header div.logo,
+header div.logo {
+    width: 50%;
+}
+
 header .form {
     width: 50%;
 }
@@ -235,6 +238,14 @@ footer .copyright {
 }
 
 @media (min-width: 769px) {
+    header div.logo {
+        width: 20vw;
+    }
+
+    header div.burger-menu{
+        display: none;
+    }
+
     main section div.products article {
         width: 22%;
     }
