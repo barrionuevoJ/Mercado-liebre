@@ -22,12 +22,13 @@
     <header>
         <div class="top-header">
             <div class="logo">
-                <img src="images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
+                <a href="/"><img src="images/logo-mercado-liebre.svg" alt="Logo"></a>
             </div>
-            <div class="form" action="#" method="GET">
-                <div class="input">Buscar productos, marcas y más</div>
-                <div class="submit"><i class="fa fa-search"></i></div>
-            </div>
+            <form action="/" method="GET">
+                <input type="text" name="search" id="search" placeholder="Buscar productos, marcas y más" minlength="3"
+                    required>
+                <button type="submit" title="search"><i class="fa fa-search"></i></button>
+            </form>
             <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
         </div>
         <nav>
@@ -94,8 +95,12 @@
                 <div class="form-input">
                     <h4>Perfil del usuario/a</h4>
                     <div class="profile">
-                        <label class="form-label" for="buy"><input type="radio" name="profileType" value="buy" id="buy">Comprador</label>
-                        <label class="form-label" for="sell"><input type="radio" name="profileType" value="sell" id="sell">Vendedor</label>
+                        <label class="form-label" for="buy"><input type="radio" name="profileType" value="buy" id="buy"
+                                required>Comprador
+                        </label>
+                        <label class="form-label" for="sell"><input type="radio" name="profileType" value="sell"
+                                id="sell" required>Vendedor
+                        </label>
                     </div>
                     <span class="feedback"></span>
                 </div>
@@ -103,24 +108,39 @@
                 <div class="form-input">
                     <h4>Intereses</h4>
                     <div class="interests">
-                        <label class="form-label" for="a"><input type="checkbox" name="interests" value="a" id="a">Electro</label>
-                        <label class="form-label" for="b"><input type="checkbox" name="interests" value="b" id="b">Hogar</label>
-                        <label class="form-label" for="c"><input type="checkbox" name="interests" value="c" id="c">Jugueteria</label>
-                        <label class="form-label" for="d"><input type="checkbox" name="interests" value="d" id="d">Vida sana</label>
+                        <label class="form-label" for="a"><input type="checkbox" name="interests" value="a"
+                                id="a">Electro
+                        </label>
+                        <label class="form-label" for="b"><input type="checkbox" name="interests" value="b" id="b">Hogar
+                        </label>
+                        <label class="form-label" for="c"><input type="checkbox" name="interests" value="c"
+                                id="c">Jugueteria
+                        </label>
+                        <label class="form-label" for="d"><input type="checkbox" name="interests" value="d" id="d">Vida
+                            sana
+                        </label>
                     </div>
                     <span class="feedback"></span>
                 </div>
 
                 <div class="form-input">
                     <h4>Elegí tu foto de usuario</h4>
-                    <input type="file" name="avatar" id="avatar">
+                    <input type="file" name="avatar" id="avatar" accept=".jpg, .jpeg">
                     <span class="feedback"></span>
                 </div>
 
-                <input type="password" name="password" placeholder="Ingrese su contraseña">
-                <input type="password" name="passConfirm" placeholder="Confirme su contraseña">
+                <div class="form-input">
+                    <label class="form-label" for="pass">Ingrese su contraseña</label>
+                    <input type="password" name="password" id="pass" minlength="8" required>
+                    <span class="feedback"></span>
+                </div>
 
-                <br>
+                <div class="form-input">
+                    <label class="form-label" for="passConfirm">Confirme su contraseña</label>
+                    <input type="password" name="passConfirm" id="passConfirm" minlength="8" required>
+                    <span class="feedback"></span>
+                </div>
+
                 <div class="form-button">
                     <button type="submit" name="submit">Enviar</button>
                     <button type="reset" name="reset">Borrar</button>
@@ -130,26 +150,28 @@
     </main>
 
     <footer>
-        <section>
-            <i class="fa-solid fa-credit-card"></i>
-            <h3>Pagá con tarjeta o en efectivo</h3>
-            <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es
-                seguro!</p>
-        </section>
+        <div class="info">
+            <section>
+                <i class="fa-solid fa-credit-card"></i>
+                <h3>Pagá con tarjeta o en efectivo</h3>
+                <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y
+                    siempre es seguro!</p>
+            </section>
 
-        <section>
-            <i class="fa-solid fa-gift"></i>
-            <h3>Envío gratis desde $2.500</h3>
-            <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de
-                Mercado Puntos.</p>
-        </section>
+            <section>
+                <i class="fa-solid fa-gift"></i>
+                <h3>Envío gratis desde $2.500</h3>
+                <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un
+                    beneficio de Mercado Puntos.</p>
+            </section>
 
-        <section>
-            <i class="fa-solid fa-user-shield"></i>
-            <h3>Seguridad, de principio a fin</h3>
-            <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre
-                protegid@.</p>
-        </section>
+            <section>
+                <i class="fa-solid fa-user-shield"></i>
+                <h3>Seguridad, de principio a fin</h3>
+                <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre
+                    protegid@.</p>
+            </section>
+        </div>
 
         <div class="copyright">
             <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
