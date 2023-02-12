@@ -273,6 +273,14 @@ footer .copyright {
 }
 
 @media (min-width: 769px) {
+
+    main section div.products {
+        height: 55vh;
+        align-items: flex-start;
+        justify-content: space-around;
+        margin: 20px 0;
+    }
+
     header div.top-header {
         padding: 0;
     }
